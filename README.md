@@ -15,6 +15,10 @@ https://github.com/jimdevops19/FlaskSeries
 
 https://flask.palletsprojects.com/en/2.0.x/cli/
 
+<!-- SQLite Browser -->
+
+https://sqlitebrowser.org/
+
 <!-- HardCode way of username info -->
 
 # THis is the hard coded way of doing a username input- this is not dyanmic
@@ -213,3 +217,47 @@ https://flask.palletsprojects.com/en/2.0.x/cli/
     }
   </style>
 </html>
+
+<!-- This is around 150 in the video -->
+
+# These were moved at 153 in the video
+
+# class Item(db.Model):
+
+# # THis field is required with sqlalchemy
+
+# id = db.Column(db.Integer(), primary_key=True)
+
+# # This sets limits on the information stored in the db
+
+# name = db.Column(db.String(length=30), nullable=False, unique=True)
+
+# price = db.Column(db.Integer(), nullable=False)
+
+# barcode = db.Column(db.String(length=12), nullable=False, unique=True)
+
+# description = db.Column(db.String(length=1024),
+
+# nullable=False, unique=True)
+
+# def **repr**(self):
+
+# # This makes the name that shows up the database custom to the name in the
+
+# return f'Item {self.name}'
+
+# @app.route("/")
+
+# @app.route('/home')
+
+# def home_page():
+
+# return render_template('home.html')
+
+# @app.route('/market')
+
+# def market_page():
+
+# items = Item.query.all()
+
+# return render_template('market.html', items=items)
