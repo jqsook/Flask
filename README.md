@@ -11,6 +11,10 @@ https://www.youtube.com/watch?v=Qr4QMBUPxWo
 
 https://github.com/jimdevops19/FlaskSeries
 
+<!-- Help with the server operation -->
+
+https://flask.palletsprojects.com/en/2.0.x/cli/
+
 <!-- HardCode way of username info -->
 
 # THis is the hard coded way of doing a username input- this is not dyanmic
